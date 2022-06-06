@@ -1,8 +1,0 @@
-def Entropy(attribute):
-        names, counts = np.unique(attribute, return_counts = True)              # returns value and count of unique members
-        entropy = 0
-        
-        for x in range(0,len(counts)):
-            entropy += -(counts[x]/len(attribute)) * math.log(counts[x]/len(attribute),2)
-        
-        return entropy
